@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "SofiaPro";
+    src: url("fonts/SofiaProRegular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "SofiaPro";
+    src: url("fonts/SofiaProSemiBold.woff") format('woff');
+    font-weight: bold;
+}
+
+  * {
+    font-family: SofiaPro;
+    margin:0;
+    padding:0;
+    border:0;
+        
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#60e3a1;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #60e3a1;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #60e3a1;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #60e3a1;
+  }
+  :focus {
+    outline: 0;
+    }
+    .wrapper {
+        margin: auto;
+        max-width: 1366px;
+    }
+  .banner_title {
+      font-size: 70px;
+      padding: 75px;
+  }
+  .features_title {
+      font-size: 36pt;
+  }
+  .footer_comment_title {
+      font-size: 55px;
+  }
+  .footer {
+      background-color: #1d1e25;
+      color: white;
+      padding: 50px;
+  }
+  .footer_copy {
+      border-top: 1px #2b2c36;
+      color: #4a4d5e;
+  }
+  .footer_form input, .footer_form textarea {
+    background: transparent;
+    border: 1px solid #60e3a1;
+    border-radius: 2px;
+    width: 100%;
+    display: inline-block;
+    padding: 19px;
+    color: #60e3a1;
+    margin-bottom: 15px;
+  }
+  .footer_form button {
+      background: #60e3a1;
+      min-width: 110px;
+      padding: 15px;
+      border-radius: 2px;
+  }
+  .features {
+    display: flex;
+    flex-direction:row;
+    padding: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .features > * {
+    flex-grow: 1;
+    width: 33%;
+    padding: 60px;
+  }
+
+@media all and (max-width: 800px) {
+    .features_whoweare, .features_whatwedo {
+        width: 50%;
+    }
+    .features_technology {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .features > * {
+        width: 100%;
+    }
+  }
+  .footer_comment {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 130px;
+  }
+
+  .footer_comment > * {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .footer_form textarea {
+      min-height: 110px;
+  }
+  .footer_copy_text {
+      float: right;
+}
+.footer_copy a {
+    color: white;
+    text-decoration: none;
+}
+.features li {
+    margin-bottom: 10px;
+}
+.features h3 {
+    margin-bottom: 38px;
+    font-size: 36px;
+}
